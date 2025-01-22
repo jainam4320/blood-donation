@@ -1,0 +1,128 @@
+<br>
+    <h1 class="register p-t-20 p-b-25" style="text-align: center;">
+        Registration
+    </h1>
+
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100 p-l-20">
+        <form id="form3" action="/register4" class="login100-form validate-form" (submit)="contactInfo($event)" >
+          <span class="login100-form-title p-t-20 p-b-25">
+            Contact Information
+          </span>
+
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-success " role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+              50%
+            </div>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate = "Flat/House no or Society name is required">
+            <span class="label-input100"> Flat No/House No/Society  </span>
+            <input class="input100" type="text" name="h_num" id="flat" placeholder="Enter your Flat No/House No/Society ">
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Street name is required">
+            <span class="label-input100"> Street </span>
+            <input class="input100" type="text" name="street" id="street" placeholder="Enter your Street Name">
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="City name is required">
+            <span class="label-input100"> City </span>
+            <input class="input100" type="text" name="city" id="city" placeholder="Enter your city name">
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="State name is required">
+            <span class="label-input100"> State </span>
+            <input class="input100" type="text" name="state" id="state" placeholder="Enter your State Name">
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Country name is required">
+            <span class="label-input100"> Country </span>
+            <input class="input100" type="text" name="country" id="country" placeholder="Enter your Country Name">
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Pin Code is required">
+            <span class="label-input100"> Pin-Code </span>
+            <input class="input100" type="text" name="pincode" id="pincode" placeholder="Enter Your Pin-Code">
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Contact number is required">
+            <span class="label-input100"> Contact Number </span>
+            <input class="input100" type="text" name="con_num" id="con-num" placeholder="Enter Your Contact Number">
+            <span class="focus-input100" data-symbol="&#xf190;"></span>
+          </div>
+
+          
+          
+          <button id="hidden-button" class="login100-form-btn" style="display: none;"></button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <nav aria-label="Page navigation" style="text-align: center;">
+		<ul class="pagination allpage">
+	    <li class="page-item">
+	     	<a 
+          class="page-link" 
+          style="color:red;border-color: red;" href="/register2">
+          Previous
+        </a>
+	    </li>
+	    <li class="page-item disabled">
+	    	<a 
+          class="page-link"  
+          style="color:red;border-color: red;">
+          1
+        </a>
+	    </li>
+	    <li class="page-item">
+	    	<a 
+          class="page-link" 
+          style="color:red;border-color: red;"
+          href="/register2"
+        >
+          2
+        </a>
+	    </li>
+       <li class="page-item active">
+        <a 
+          class="page-link" 
+          style="background-color:red;border-color: red;">
+          3
+        </a>
+      </li>
+      <li class="page-item">
+        <a 
+          class="page-link next-page" 
+          style="color:red;border-color: red;">
+          4
+        </a>
+      </li>
+      <li class="page-item disabled">
+        <a 
+          class="page-link" 
+          style="color:red;border-color: red;">
+          5
+        </a>
+      </li>
+      <li class="page-item">
+        <a 
+          class="page-link next-page" 
+          style="color:red;border-color: red;">
+          Next
+        </a>
+      </li>
+	   </ul>
+	  </nav>
+
+<router-outlet></router-outlet>

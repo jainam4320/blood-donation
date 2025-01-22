@@ -1,0 +1,21 @@
+<br><br>
+<div class="limiter">
+    <div class="container-login200" style="overflow-y: auto;">
+      <div class="wrap-login100 p-l-20 p-r-30 p-t-5">
+        <form id="form7" class="login100-form validate-form p-t-20" action="/change-password" (submit)="otpVerify($event)" >
+          <div class="wrap-input100 validate-input" data-validate="OTP Is Required">
+            <span class="label-input100"> OTP (One Time Password) </span><br><br>
+            <input class="input100" type="number" name="otp" id="otp" placeholder="Enter OTP" />
+            <span class="focus-input100" data-symbol="&#xf190;"></span>
+          </div>
+          <!-- <br> -->
+          <div class="wrap-login100-form-btn" >
+            <button id="button2" class="login100-form-btn" type="submit" >
+              Confirm OTP
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

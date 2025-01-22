@@ -1,0 +1,153 @@
+<br>
+<h1 class="register  p-t-20 p-b-25" style="text-align: center;">
+    Registration
+</h1>
+
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100 p-l-20">
+        <form id="form5" class="login100-form" action="/login" (submit)="healthReport2($event)" >
+          <span class="login100-form-title p-t-20 p-b-25">
+            Your Health Report - 2
+          </span>
+
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active progress-bar-success " role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+              100%
+            </div>
+          </div>
+
+          <div class="wrap-input100" *ngIf="gen1 === 'Female'">
+            <span class="label-input100"> Pregnancy </span>
+            <br>
+            <select class="segment-select" id="pragnancy" >
+              <option value="yes"> Yes </option>
+              <option value="no" selected> No </option>
+            </select>
+          </div>
+
+          <div class="wrap-input100">
+            <span class="label-input100"> Hepatitis - B </span>
+            <br>
+            <select class="segment-select" id="hepatitis-b" >
+              <option value="yes"> Yes </option>
+              <option value="no" selected> No </option>
+            </select>
+          </div>
+
+          <div class="wrap-input100">
+            <span class="label-input100"> Tuber Culosis (T.B.) </span>
+            <br>
+            <select class="segment-select" id="tb" >
+              <option value="yes"> Yes </option>
+              <option value="no" selected> No </option>
+            </select>
+          </div>
+
+          <div class="wrap-input100">
+            <span class="label-input100"> CJD Or vCJD </span>
+            <br>
+            <select class="segment-select" id="cjd" >
+              <option value="yes"> Yes </option>
+              <option value="no" selected> No </option>
+            </select>
+          </div>
+
+          <div class="wrap-input100">
+            <span class="label-input100"> HIV / AIDS </span>
+            <br>
+            <select class="segment-select" id="hiv-aids" >
+              <option value="yes"> Yes </option>
+              <option value="no" selected> No </option>
+            </select>
+          </div>
+
+          <div class="wrap-input100">
+            <span class="label-input100"> Intraveneous (I.V.) Drug </span>
+            <br>
+            <select class="segment-select" id="iv-drug" >
+              <option value="yes"> Yes </option>
+              <option value="no" selected> No </option>
+            </select>
+          </div>
+
+          <div class="wrap-input100">
+            <span class="label-input100"> Other Disease  </span>
+            <input class="input100" type="text" name="other_disease" id="other-disease" placeholder="Enter Any Other Disease (Optional)">
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
+          </div>
+
+          <br>
+
+          <div class="wrap-login100-form-btn" >
+            <button id="hidden-button" class="login100-form-btn">
+              Submit Registration
+            </button>
+          </div>
+          <br><br>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <nav aria-label="Page navigation" style="text-align: center;" >
+		<ul class="pagination allpage" >
+	    <li class="page-item">
+	     	<a 
+          class="page-link"
+          style="color:red;border-color: red;"
+          href="/register4"
+        >
+          Previous
+        </a>
+	    </li>
+	    <li class="page-item disabled">
+	    	<a 
+          class="page-link" 
+          style="color:red;border-color: red;">
+          1
+        </a>
+	    </li>
+	    <li class="page-item disabled">
+	    	<a 
+          class="page-link" 
+          style="color:red;border-color: red;">
+          2
+        </a>
+	    </li>
+       <li class="page-item disabled">
+        <a 
+          class="page-link" 
+          style="color:red;border-color: red;">
+          3
+        </a>
+      </li>
+      <li class="page-item">
+        <a 
+          class="page-link" 
+          style="color:red;border-color: red;"
+          href="/register4"
+        >
+          4
+        </a>
+      </li>
+      <li class="page-item active">
+        <a 
+          class="page-link"  
+          style="background-color:red;border-color: red;">
+          5
+        </a>
+      </li>
+      <li class="page-item disabled">
+        <a 
+          class="page-link"  
+          style="color:red;border-color: red;">
+          Next
+        </a>
+      </li>
+	   </ul>
+	  </nav>
+
+<router-outlet></router-outlet>

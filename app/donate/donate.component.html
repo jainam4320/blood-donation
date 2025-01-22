@@ -1,0 +1,28 @@
+
+<br><br><br>
+<h1 class="register p-t-20 p-b-25" style="text-align: center;">
+    Donors List
+</h1>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<br><br>
+
+<div *ngFor="let obj of viewlist2; index as id" class="col-sm-3">
+<div class="card">
+    <div *ngIf="obj.gender === 'Male'; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock><img src="assets/male.png" alt="Avatar" style="width:100%"></ng-template>
+    <ng-template #elseBlock><img src="assets/female.png" alt="Avatar" style="width:100%"></ng-template>
+    
+    <div class="container">
+        <h2><b> {{ obj.fname }} </b></h2> 
+        <p> <span class="fa fa-tint"></span> &nbsp;&nbsp;&nbsp; Blood Group :  {{ obj.bgroup }} </p>
+        <p> <span class="fa fa-envelope-o"></span> &nbsp;&nbsp;&nbsp; {{ obj.email }} </p>
+        <p> <span class="fa fa-mobile"></span> &nbsp;&nbsp;&nbsp; {{ obj.connum }} </p>
+        <p> <span class="fa fa-circle"></span> &nbsp;&nbsp;&nbsp; Last Donated : {{ obj.ddate }} </p>
+        <p> <span >%</span> &nbsp;&nbsp;&nbsp; Hemoglobin : {{ obj.hemo }} </p>
+    </div>
+  </div>
+</div>
+
+<!-- <app-footer></app-footer> -->
+<router-outlet></router-outlet>

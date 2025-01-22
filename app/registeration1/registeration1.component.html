@@ -1,0 +1,136 @@
+<br>
+    <h1 class="register p-t-20 p-b-25" style="text-align: center;">
+        Registration
+    </h1>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100 p-l-20">
+                
+            <form id="form1" class="login100-form validate-form" action="/register2" (submit)="personalInfo($event)" >
+                    <!-- <form (submit)="requestvisitevent($event)"> -->
+                <span class="login100-form-title p-t-20 p-b-25">
+                    Personal Information
+                </span>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped active progress-bar-success " role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 1%">
+                    0%
+                    </div>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate = "First name is required">
+                    <span class="label-input100">First Name </span>
+                    <input class="input100" type="text" id="fname" name="fname" placeholder="Enter Your First Name Here" />
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Middle Name is required">
+                    <span class="label-input100"> Middle Name </span>
+                    <input class="input100" type="text" id="mname" name="mname" placeholder="Enter Your Middle Name Here" />
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Last Name is required">
+                    <span class="label-input100"> Last Name </span>
+                    <input class="input100" type="text" id="lname" name="lname" placeholder="Enter Your Last Name Here" />
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Email-Id is required">
+                    <span class="label-input100"> Email-Id </span>
+                    <input class="input100" type="email" name="email" id="email" placeholder="Enter Your Email-Id">
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                </div>
+
+                <div class="wrap-input100">
+                    <span class="label-input100"> Gender </span>
+                    <br>
+                    <select class="segment-select" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Date of birth is required">
+                    <span class="label-input100"> Date Of Birth </span>
+                    <input class="input100" type="date" name="dob" id="dob" />
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <span class="label-input100"> Password </span>
+                    <input class="input100" type="password" name="pass" id="pass" placeholder=" Enter Your Password Here " />
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <span class="label-input100"> Confirm Password </span>
+                    <input class="input100" type="password" name="cpass" id="cpass" placeholder= " Re-Enter Your Password Here " />
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                </div>
+
+                <!-- <button id="hidden-button" class="login100-form-btn" >submit</button> -->
+                <button id="hidden-button" class="login100-form-btn" type="submit" style="display: none;" ></button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<nav aria-label="Page navigation" style="text-align: center;">
+	<ul class="pagination allpage">
+	    <li class="page-item disabled">
+	     	<a 
+                class="page-link"
+                style="color:red;border-color: red;">
+                    Previous
+            </a>
+	    </li>
+	    <li class="page-item active">
+	    	<a 
+                class="page-link" 
+                style="background-color:red;border-color: red;">
+                    1
+            </a>
+	    </li>
+	    <li class="page-item">
+	    	<a 
+                class="page-link next-page" 
+                style="color:red;border-color: red;">
+                    2
+            </a>
+	    </li>
+        <li class="page-item disabled">
+            <a 
+                class="page-link" 
+                style="color:red;border-color: red;">
+                    3
+            </a>
+        </li>
+        <li class="page-item disabled">
+            <a 
+                class="page-link" 
+                style="color:red;border-color: red;">
+                    4
+            </a>
+        </li>
+        <li class="page-item disabled">
+            <a 
+                class="page-link" 
+                style="color:red;border-color: red;">
+                    5
+            </a>
+        </li>
+        <li class="page-item">
+            <a 
+                class="page-link next-page" 
+                style="color:red;border-color: red;">
+                    Next
+            </a>
+        </li>
+	</ul>
+</nav>
+    
+<router-outlet></router-outlet>

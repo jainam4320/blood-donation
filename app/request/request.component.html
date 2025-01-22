@@ -1,0 +1,30 @@
+<br><br><br>
+    <h1 class="register p-t-20 p-b-25" style="text-align: center;">
+        Emergency Request
+    </h1>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="b1" name="newReq" ><a href="/req-generate"> Generate New Request </a></button>
+    
+<br><br>
+
+<div *ngFor="let obj of viewlist; index as id" class="col-sm-3">
+    <div class="card">
+        <div *ngIf="obj.gender === 'Male'; then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock><img src="assets/male.png" alt="Avatar" style="width:100%"></ng-template>
+        <ng-template #elseBlock><img src="assets/female.png" alt="Avatar" style="width:100%"></ng-template>
+        
+        <div class="container">
+          <h4><b> {{ obj.pname }} </b></h4> 
+            <p> <span class="fa fa-heartbeat"></span> &nbsp;&nbsp;&nbsp; Blood Group :  {{ obj.bgroup }} </p>
+            <p> <span class="fa fa-tint"></span> &nbsp;&nbsp;&nbsp;&nbsp; Unit/Bag(s) : {{ obj.bags }} </p>
+            <p> <span class="fa fa-building"></span> &nbsp;&nbsp;&nbsp; {{ obj.hname }} </p>
+            <p> <span class="fa fa-envelope-o"></span> &nbsp;&nbsp;&nbsp; {{ obj.email }} </p>
+            <p> <span class="fa fa-mobile"></span> &nbsp;&nbsp;&nbsp; {{ obj.connum }} </p>
+            <p> <span class="fa fa-home"></span> &nbsp;&nbsp;&nbsp; {{ obj.city }} </p>
+            <p> <span class="fa fa-map"></span> &nbsp;&nbsp;&nbsp; {{ obj.address }} </p>
+        </div>
+      </div>
+</div>
+    <!-- <br><br><br><br><br><br> -->
+<!-- <app-footer></app-footer> -->
+<router-outlet></router-outlet>

@@ -1,0 +1,27 @@
+<br><br><br>
+    <h1 class="register p-t-20 p-b-25" style="text-align: center;">
+        User Info
+    </h1>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="b1" (click)="logout()" > Logout </button>
+    
+<br><br>
+<!-- *ngIf="obj.email === this.email" -->
+<div *ngFor="let obj of viewlist1; index as id">
+    <div *ngIf="obj.email === email">
+        <div class="card" >
+            <div *ngIf="obj.gender === 'Male'; then thenBlock else elseBlock"></div>
+            <ng-template #thenBlock><img src="assets/male.png" alt="Avatar" style="width:100%"></ng-template>
+            <ng-template #elseBlock><img src="assets/female.png" alt="Avatar" style="width:100%"></ng-template>
+        </div>
+        <div class="container">
+            <h1><b> {{ obj.fname }} {{ obj.mname }} {{ obj.lname }} </b></h1> 
+            <h4> <span class="fa fa-heartbeat"></span> &nbsp;&nbsp;&nbsp; Blood Group :  {{ obj.bgroup }} </h4>
+            <h4> <span class="fa fa-envelope-o"></span> &nbsp;&nbsp;&nbsp; {{ obj.email }} </h4>
+            <h4> <span class="fa fa-mobile"></span> &nbsp;&nbsp;&nbsp; {{ obj.connum }} </h4>
+        </div>
+    </div>
+</div>
+    <br><br><br><br><br><br>
+<app-footer></app-footer>
+<router-outlet></router-outlet>

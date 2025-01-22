@@ -1,0 +1,95 @@
+<br>
+    <h1 class="register p-t-20 p-b-25" style="text-align: center;">
+        Request
+    </h1>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100 p-l-20">
+                
+            <form id="form12" class="login100-form validate-form" action="/request" (submit)="requestRegister($event)" >
+                    <!-- <form (submit)="requestvisitevent($event)"> -->
+                <span class="login100-form-title p-t-20 p-b-25">
+                    New Blood Request
+                </span>
+
+                <div class="wrap-input100 validate-input" data-validate = "Patient name is required">
+                    <span class="label-input100"> Patient Name </span>
+                    <input class="input100" type="text" id="pname" name="pname" placeholder="Enter Patient Name Here" />
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                </div>
+
+                <div class="wrap-input100">
+                    <span class="label-input100"> Gender </span>
+                    <br>
+                    <select class="segment-select" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+
+                <div class="wrap-input100">
+                    <span class="label-input100">Blood Group</span>
+                    <br>
+                    <select class="segment-select" id="blood-group">
+                        <option value="A+"> A+ </option>
+                        <option value="A-"> A- </option>
+                        <option value="B+"> B+ </option>
+                        <option value="B-"> B- </option>
+                        <option value="O+"> O+ </option>
+                        <option value="O-"> O- </option>
+                        <option value="AB+"> AB+ </option>
+                        <option value="AB-"> AB- </option>
+                    </select>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="No. of blood bags is required">
+                    <span class="label-input100"> No. Of Blood Bags (Needed) </span>
+                    <input class="input100" type="number" id="bags" name="bags" placeholder="Enter No. Of Blood Bags Needed" />
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Hospital Name is required">
+                    <span class="label-input100"> Hospital Name </span>
+                    <input class="input100" type="text" id="hname" name="hname" placeholder="Enter Hospital Name Here" />
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Email-Id is required">
+                    <span class="label-input100"> Email-Id </span>
+                    <input class="input100" type="email" name="email" id="email" placeholder="Enter Your Email-Id">
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Contact Number is required">
+                    <span class="label-input100"> Contact Number </span>
+                    <input class="input100" type="number" name="connum" id="connum" placeholder="Enter Your Contact Number ">
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                </div>
+                
+                <div class="wrap-input100 validate-input" data-validate="City Name is required">
+                    <span class="label-input100"> City </span>
+                    <input class="input100" type="text" id="city" name="city" placeholder="Enter Your City Name Here" />
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Address is required">
+                    <span class="label-input100"> Address </span>
+                    <input class="input100" type="text" id="address" name="lname" placeholder="Enter Your Address Here" />
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                </div>
+
+                <div class="wrap-login100-form-btn">
+                    <!-- <div class="login100-form-bgbtn"></div> -->
+                    <button id="button1" class="login100-form-btn" type="submit" >
+                        Generate New Request
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<!-- <app-footer></app-footer> -->
+<router-outlet></router-outlet>
